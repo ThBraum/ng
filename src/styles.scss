@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "ag-grid-community/dist/styles/ag-grid.css";
+@import "ag-grid-community/dist/styles/ag-theme-material.css";
+@import "~ag-grid-community/dist/styles/ag-theme-balham.css";
+
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+ag-grid-angular {
+  .icons-color {
+    color: #00BCD4;
+  }
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.msg-success {
+  font-weight: bold;
+  background-color: #28a745;
+  color: #fff
+}
+
+.msg-error {
+  background-color: #e35e6b;
+  color: #fff
+}

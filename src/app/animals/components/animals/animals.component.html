@@ -1,0 +1,19 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Animais</mat-card-title>
+    <div class="btn">
+      <button mat-raised-button color="primary" type="button" size="small" fullWidth
+      (click)="registerAnimal()">
+      Novo Animal</button>
+    </div>
+  </mat-card-header>
+  <mat-card-content>
+    <ag-grid-angular
+    class="ag-theme-balham"
+    #agGrid style="width: 100%; height: 600px;"
+    [rowData]="list"
+    [columnDefs]="columnsDef"
+    [defaultColDef]="defaultColDef">
+    </ag-grid-angular>
+  </mat-card-content>
+</mat-card>

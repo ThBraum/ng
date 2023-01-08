@@ -1,0 +1,43 @@
+<mat-card>
+  <mat-card-header>
+    <div mat-card-avatar class="ng-image"></div>
+    <mat-card-title>Cadastro</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form [formGroup]="animalForm" class="form-container">
+      <div class="full-width">
+        <mat-form-field class="full-width">
+          <mat-label>Nome</mat-label>
+          <input matInput formControlName="name">
+        </mat-form-field>
+      </div>
+      <div class="spacing">
+        <div class="full-width"><tr>
+          <td><mat-form-field class="full-width">
+            <mat-label>Raça</mat-label>
+            <input matInput formControlName="breed">
+          </mat-form-field></td>
+          <td><mat-form-field class="full-width">
+            <mat-label>Cor</mat-label>
+            <input matInput formControlName="color">
+          </mat-form-field></td></tr>
+        </div>
+        <div class="full-width"><tr>
+          <td><mat-form-field class="full-width">
+            <mat-label>Peso</mat-label>
+            <input matInput formControlName="weight">
+          </mat-form-field></td>
+          <td><mat-form-field class="full-width">
+            <mat-label>Idade</mat-label>
+            <input matInput formControlName="age">
+          </mat-form-field></td></tr>
+        </div>
+      </div>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button class="btn" color="primary" type="button" size="small" fullWidth
+    [disabled]="btnDisabled()" (click)="postAnimal()">
+    Salvar</button>
+  </mat-card-actions>
+</mat-card>
